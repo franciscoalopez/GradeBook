@@ -11,6 +11,7 @@ namespace GradeBook
             var book = new Book();
             book.AddGrade(89.1);
             book.AddGrade(90.5);
+            book.grades.Add(101);
 
             if(args.Length > 0)
             {
