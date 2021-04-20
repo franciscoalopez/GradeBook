@@ -34,6 +34,17 @@ namespace GradeBook
         public abstract Statistics GetStatistics();
     }
 
+    public class Book : NamedObject
+    {
+        public Book(string name) : base(name)
+        {
+            grades = new List<double>();
+            Name = name;
+        }
+
+        
+    }
+
     public class DiskBook : Book
     {
         public DiskBook(string name) : base(name)
